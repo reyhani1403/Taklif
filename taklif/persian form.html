@@ -1,0 +1,305 @@
+<html dir="rtl" lang="fa-IR">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+    body {
+        background-color: rgb(176, 221, 222);
+        font-family: samim;
+        src: url(fonts/Samim.woff) format(woff);
+    }
+
+    header {
+        padding: 1.3vw;
+        background-color: rgb(105, 171, 183);
+        font-size: 2vw;
+        color: white;
+        margin-right: 24vw;
+        margin-left: 24vw;
+        margin-top: 1vw;
+        text-align: center;
+    }
+
+    form {
+        background-color: white;
+        padding: 20px;
+        font-size: 1vw;
+        border-radius: 3px;
+        border-color: black;
+        margin-right: 24vw;
+        margin-left: 24vw;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        font-size: 2vw;
+    }
+
+    h2 {
+        font-size: 1.1vw;
+        margin-top: 2vw;
+        color: rgba(5, 103, 163, 0.807);
+    }
+
+    ul {
+        list-style-type: square;
+    }
+
+    textarea {
+        margin-right: 0vw;
+        width: 32vw;
+        height: 4vw;
+        font-family: samim;
+        src: url(fonts/Samim.woff) format(woff);
+    }
+</style>
+
+<header></header>
+
+<body>
+    <form action="/action-page.php">
+        <h1>"فرم رزومه"</h1>
+        <h2> &#9698 اطلاعات پایه</h2>
+        <hr />
+        <ul>
+            <li>
+                <label for="fname" style="float:right;margin-left: 7.1vw;">نام</label>
+
+                <input type="text" id="fname" name="fname"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;font-family: samim;margin-left: 16vw;src:url(fonts/Samim.woff) format(woff);">
+                <br>
+                <br>
+            </li>
+
+            <li>
+                <label for="iname" style="float: right;margin-left: 7.1vw;">نام خانوادگی</label>
+                <input type="text" id="iname" name="iname"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;font-family: samim;margin-left: 16vw;src: url(fonts/Samim.woff) format(woff);">
+                <br>
+                <br>
+            </li>
+
+            <li>
+                <label for="iname" style="float: right;margin-left: 7.1vw;">کدملی </label>
+                <input type="text" id="iname" name="iname"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;font-family: samim;margin-left: 16vw;src: url(fonts/Samim.woff) format(woff);">
+                <br>
+                <br>
+            </li>
+
+            <li>
+                <label for="Birthday" style="float: right;margin-left: 7.1vw;">تاریخ تولد</label>
+                <input type="date" id="Birthday" name="Birthday"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;font-family: samim;margin-left: 16vw;src: url(fonts/Samim.woff) format(woff);">
+                <br>
+                <br>
+            </li>
+
+            <li>
+                <label for="جنسیت" style="float: right;margin-left: 12.5vw;">جنسیت:</label>
+
+                <input type="radio" id="جنسیت" name="جنسیت" value="مرد" style="float: right;">
+                <lable />مرد</label for="مرد">
+                <input type="radio" id="جنسیت" name="جنسیت" value="زن">
+                <lable />زن</label for="زن">
+                <br>
+                <br>
+            </li>
+
+            <li>
+                <label for="ازدواج" style="float: right;margin-left: 10.3vw;">وضعیت تاهل:</label>
+
+                <input type="radio" id="ازدواج" name="ازدواج" value="مجرد">
+                <lable />مجرد</label for="مجرد">
+
+                <input type="radio" id="ازدواج" name="ازدواج" value="متاهل">
+                <lable />متاهل</label for="متاهل">
+            </li>
+        </ul>
+
+        <input type="reset" value="بازنشانی"
+            style="border-radius: 0.3vw;border-style: solid;font-size: 0.85vw;float: left;margin-left: 8vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);"">
+
+
+        <h2> &#9698 اطلاعات تماس</h2>
+        <hr />
+        <ul>
+            <li>
+                <label for="Phone" style="float: right;margin-left: 7.1vw;">تلفن ثابت</label>
+                <input type="tel" id="phone" name="phone"  placeholder="02177920690"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;margin-left: 16vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+                <br>
+                <br>
+            </li>
+
+            <li>
+                <label for="Phone" style="float: right;margin-left: 7.1vw;">تلفن همراه</label>
+                <input type="tel" id="phone" name="phone" pattern="+98[0-9]{10}" placeholder="+989016044109"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;margin-left: 16vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+                <br>
+                <br>
+            </li>
+
+            <li>
+                <label for="address" style="float: right;margin-left:6.1vw;"> آدرس محل سکونت</label>
+                <input type="text" id="address" name="address"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;margin-left: 16vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+                <br>
+                <br>
+            </li>
+
+            <li>
+                <label for="email" style="float: right;">پست الکترونیک</label>
+                <input type="email" id="email" name="email"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;margin-left: 16vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+            </li>
+            <br>
+            <li>
+                <label for="checkbox" style="float: right;">شبکه های اجتماعی:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="checkbox" id="checkbox" name="checkbox" value="ایتا" style="float: right;">
+                <lable for="checkbox">ایتا&nbsp;</lable>
+
+                <input type="checkbox" id="checkbox" name="checkbox" value="بله">
+                <lable for="checkbox">بله&nbsp;</lable>
+
+                <input type="checkbox" id="checkbox" name="checkbox" value="تلگرام">
+                <lable for="checkbox">تلگرام&nbsp;</lable>
+
+                <input type="checkbox" id="checkbox" name="checkbox" value="اینستاگرام">
+                <lable for="checkbox">اینستاگرام&nbsp;</lable>
+            </li>
+
+
+            </li>
+        </ul>
+        <br>
+
+        <input type="reset" value="بازنشانی"
+            style="border-radius:0.3vw;border-style:solid;font-size: 0.85vw;float: left;margin-left: 8vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+
+
+        <h2>&#9698 تحصیلات</h2>
+        <hr />
+        <ul>
+            <li>مدرک تحصیلی
+
+                <input list="browsers"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;margin-left: 16vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+                <datalist id="browsers">
+                    <option value="زیر دیپلم">
+                    <option value="دیپلم">
+                    <option value="کارشناسی">
+                    <option value="کارشناسی ارشد">
+                    <option value="دکتری">
+                    <option value="فوق دکتری">
+                </datalist>
+            </li>
+            <br>
+
+            <li>
+                <label for="Program name" style="float: right;margin-left: 7.1vw;">رشته</label>
+                <input type="text" id="Program Name" name="Program Name"
+                    style="border-radius: 0.4vw;border-style: dotted;font-size: 1vw;float: left;margin-left: 16vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+            </li>
+        </ul>
+
+        <input type="reset" value="بازنشانی"
+            style="border-radius: 0.3vw;border-style: solid;font-size: 0.85vw;float: left;margin-left: 8vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+
+        <h2> &#9698 سوابق کاری </h2>
+        <hr />
+        <ul>
+            <li>
+                <lable for="job" style="float: right;">(پست های سابق، نام شرکت ها، مدت استخدام)</lable>
+            </li>
+
+            <textarea name="massage" rows="3" cols="50"></textarea>
+            <br>
+            <br>
+
+            <li>
+                <label for="Achievements" style="float: right;">دوره ها و گواهینامه ها </label>
+            </li>
+
+            <textarea name="massage" rows="3" cols="50"></textarea>
+        </ul>
+
+        <input type="reset" value="بازنشانی"
+            style="border-radius: 0.3vw;border-style: solid;font-size:0.85vw;float: left;margin-left: 8vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+        <br>
+
+        <h2>&#9698 مهارت ها </h2>
+        <hr />
+        <ul>
+            <li>
+                <label for="level">فن بیان و سخنوری</label>
+                <input type="range" id="level" name="level" min="0" max="20" style="float: left;margin-left: 16vw;">
+            </li>
+            <br>
+
+            <li>
+                <label for="level">مدیریت و راهبری</label>
+                <input type="range" id="level" name="level" min="0" max="20" style="float: left;margin-left: 16vw;">
+            </li>
+            <br>
+
+            <li>
+                <label for="level">انجام کار تیمی</label>
+                <input type="range" id="level" name="level" min="0" max="20" style="float: left;margin-left: 16vw;">
+            </li>
+            <br>
+
+            <li>
+                <label for="level"
+                    style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">javascript</label>
+                <input type="range" id="level" name="level" min="0" max="20" style="float: left; margin-left: 16vw;">
+            </li>
+            <br>
+
+            <li>
+                <label for="level">فتوشاپ</label>
+                <input type="range" id="level" name="level" min="0" max="20" style="float: left;margin-left: 16vw;">
+            </li>
+            <br>
+
+            <input type="reset" value="بازنشانی"
+                style="border-radius: 0.3vw;border-style: solid;font-size: 0.85vw;float: left;margin-left: 8vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+        </ul>
+
+
+        <h2>&#9698 زبان های خارجی </h2>
+        <hr />
+        <ul>
+            <li>انگلیسی</li>
+        </ul>
+        <label for="quantity" style="float: right;margin-right: 1.7vw;">مهارت خواندن&nbsp;</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="5"
+            style="border-radius: 0.4vw;border-style: dotted;font-size: 0.8vw;float: right;margin-right:0.1vw;">
+
+        <label for="quantity" style="float: right;">مهارت نوشتن&nbsp;</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="5"
+            style="border-radius: 0.4vw;border-style: dotted;font-size: 0.8vw;float: right;margin-right: 0.1vw;">
+
+
+        <label for="quantity" style="float: right;">مهارت صحبت کردن&nbsp;</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="5"
+            style="border-radius: 0.4vw;border-style: dotted;font-size: 0.8vw;float: right;margin-right: 0.1vw;">
+
+
+        <label for="quantity" style="float: right;">مهارت گوش کردن&nbsp;</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="5"
+            style="border-radius: 0.4vw;border-style: dotted;font-size: 0.8vw;float: right;margin-right: 0.1vw;">
+
+
+        <br>
+        <br>
+        <br>
+        <input type="submit" id="iname" name="iname" value="ثبت اطلاعات"
+            style="border-radius: 0.4vw;border-style: dotted;font-size:1vw;float: left;margin-left: 3vw;font-family: samim;src: url(fonts/Samim.woff) format(woff);">
+        <br>
+
+    </form>
+</body>
+
+</html>
